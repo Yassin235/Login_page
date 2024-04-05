@@ -1,0 +1,188 @@
+body{
+    height: 100%;
+    /* width: 100%; */
+    background-color: #2d3436;
+}
+header{
+    display: block;
+    padding-bottom: 10px;
+}
+ul{ 
+    width: 70%;
+    list-style: none ;
+    height: 20px;
+    margin: 0 15%;
+    background-color: #2d3436;
+}
+ul li {
+    box-sizing: border-box;
+    display: inline;
+    padding-right:30px ;
+}
+a{ 
+     font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ul li::before{
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent transparent #00ffff;
+}
+ul li::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: #ff00c3;
+    margin-left: 5px;
+}
+header .icone {
+    float: right;
+    position: relative;
+    top: -59px;
+    right: 30px;
+}
+header .icone h1{
+    cursor: pointer;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+/* section */
+section .add{
+    border-radius: 73px;
+    border: 2px solid transparent;
+    width: 40%;
+    margin: 0 30%;
+    position: relative;
+    top: 90px;
+    transition: all .5s ease-in-out;
+}
+section .add:hover{
+    border-color: #ff00c3;
+    box-shadow: 0px 0px 10px 7px #00ffff inset;
+    outline: none;
+    /* transition: all .5s ease-in-out; */
+}
+section{
+    width: 70%;
+    height: 60%;
+    margin: 0 15%;
+    background-color:#2d3436 ;
+}
+section h1{
+    cursor: default;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 30px;
+    
+    display: block;
+}
+section form{
+    width: 100%;
+}
+section form .email,.password,.bottom{
+    padding-bottom: 20px;
+    margin: 0 0 0 25%;
+}
+section form .email label,.password label{
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 15px;
+    font-style: normal;
+}
+section form .lab1,.lab2{
+    display: inline-block;
+    width: 90px;;
+}
+section form input{
+    display: inline-block;
+    height: 17px;
+    border-radius: 99em;
+    padding-left: 12px;
+    font-family: monospace;
+    border: 1.5px solid #00ffff;
+    transition: all .3s ease-in-out;
+}
+section form div .email input:hover{
+    border-color: #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+    outline: none;
+    /* transition: all .3s ease-in-out; */
+}
+section form div .password input:hover{
+    border-color: #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+    outline: none;
+    /* transition: all .3s ease-in-out; */
+}
+section form div .email input:focus{
+    border-color: #ff00c3;
+    box-shadow: 0 0 5px #ff00c3;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+section form div .password input:focus{
+    border-color: #ff00c3;
+    box-shadow: 0 0 5px #ff00c3;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+section form div.bottom{
+    width: 100%;
+    height: 60px;
+}
+section form div .bottom #bott {
+    cursor: pointer;
+    text-align: center;
+    height: 23px;
+    width: 72px;
+    transition: all .3s ease-in-out;
+    border-radius: 99em;
+    padding-left: 12px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1.5px solid transparent;
+    display: block;
+    position: relative;
+    right: -12.5%;
+    top: 37%;
+    background-color: #1e272e;
+    border: 1.5px solid #00ffff;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section form div .bottom #bott:hover{
+    border-color: #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+    outline: none;
+}
